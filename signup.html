@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="logoimg">
+            <img
+              class="col-md-6"
+              src="imgs/Logo transperent 1.png"
+              alt="Read begin logo"
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="your-journey d-flex flex-column justify-content-around align-items-center col-md-6"
+        >
+          <h2>Your Journey Is About To Start!!</h2>
+          <img src="imgs/woolly-success-1 1.png" alt="" />
+        </div>
+
+        <div class="signup col-md-6">
+          <div class="header col-9">
+            <h2>Create your account</h2>
+            <p>it's free and easy</p>
+          </div>
+
+          <div class="form d-flex flex-column gap-3 col-9 align-items-center">
+            <div
+              class="inputs col-12 gap-2 d-flex flex-column align-items-center"
+            >
+              <div class="input position-relative col-12">
+                <label for="name">Full name</label>
+                <input
+                  type="text"
+                  name=""
+                  id="name"
+                  placeholder="Enter your name"
+                  class="col-7"
+                />
+                <img
+                  id="v-name"
+                  class="valid-icon"
+                  src="imgs/download.svg"
+                  alt=""
+                />
+                <img
+                  id="inv-name"
+                  class="invalid-icon"
+                  src="imgs/invalid.svg"
+                  alt=""
+                />
+              </div>
+              <div class="input position-relative col-12">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name=""
+                  id="email"
+                  placeholder="Enter your email"
+                  class="col-7"
+                />
+                <img
+                  id="v-mail"
+                  class="valid-icon"
+                  src="imgs/download.svg"
+                  alt=""
+                />
+                <img
+                  src="imgs/invalid.svg"
+                  alt=""
+                  id="inv-mail"
+                  class="invalid-icon"
+                  alt=""
+                />
+                <div id="email-exist">
+                  <span id="email-exist-hint">Email already exists</span>
+                </div>
+              </div>
+              <div class="input position-relative col-12">
+                <label for="pass">Password</label>
+                <input
+                  type="password"
+                  name=""
+                  id="pass"
+                  placeholder="Enter your password"
+                  class="col-7"
+                />
+                <button id="eye"><i class="fa-solid fa-eye"></i></button>
+                <button id="eye-slash">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </button>
+                <img
+                  id="v-img"
+                  class="valid-icon-pass"
+                  src="imgs/download.svg"
+                  alt=""
+                />
+                <img
+                  id="inv-img"
+                  class="invalid-icon-pass"
+                  src="imgs/invalid.svg"
+                  alt=""
+                  data-bs-placemen="top"
+                  data-bs-toggle="popover"
+                  data-bs-title="Password"
+                  data-bs-content="At least 8 chars 
+                    At least 1 uppercase char
+                    At least 1 number
+                    At least 1 special character (!@#$%^)
+                    No sapces ' '
+                    "
+                />
+                <span>Must be 8 characters at least</span>
+              </div>
+            </div>
+
+            <div class="policies d-flex align-items-start">
+              <input
+                class="form-check-input mt-0"
+                type="checkbox"
+                value="accept"
+                id="polices"
+                aria-label="Checkbox for following text input"
+              />
+              <label for="pol" class="d-none">f</label>
+              <h6 class="mx-2">
+                By creating an account means you agree to the
+                <span>Terms and Conditions</span>, and our
+                <span>Privacy Policy</span>
+              </h6>
+            </div>
+
+            <div class="signup-btn col-12 d-flex justify-content-center">
+              <button id="signup" class="w-50">Sign Up</button>
+            </div>
+          </div>
+
+          <div class="social d-flex flex-column gap-2 align-items-center">
+            <span>or do it via other accounts</span>
+            <div class="icons gap-2 d-flex">
+              <a href=""><i class="fa-brands fa-google"></i></a>
+              <a href=""><i class="fa-brands fa-apple"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <div class="haveacc">
+            <h6>Already have an account? <a href="signin.html">Sign In</a></h6>
+          </div>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Registeration complete
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary">
+                    <a
+                      class="text-decoration-none text-white"
+                      href="signin.html"
+                      >Sign in</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

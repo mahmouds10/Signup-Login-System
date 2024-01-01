@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="py-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="logoimg">
+            <img
+              class="col-md-6"
+              src="imgs/Logo transperent 1.png"
+              alt="Read begin logo"
+            />
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div
+          class="your-journey d-flex flex-column justify-content-around align-items-center col-md-6"
+        >
+          <div>
+            <h2>Welcome to Our Hero!</h2>
+            <h4>Lets continue our journey</h4>
+          </div>
+          <img src="imgs/woolly-astronaut-6.png" alt="" />
+        </div>
+
+        <div class="signup col-md-6">
+          <div class="header col-9">
+            <h2>Welcome back!</h2>
+            <p>your Success Is Waiting You</p>
+          </div>
+
+          <div class="form d-flex flex-column gap-3 col-9 align-items-center">
+            <div
+              class="inputs col-12 gap-2 d-flex flex-column align-items-center"
+            >
+              <div class="input position-relative col-12">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name=""
+                  id="email-signin"
+                  placeholder="Enter your email"
+                  class="col-7"
+                />
+                <img
+                  id="v-mail-signin"
+                  class="valid-icon"
+                  src="imgs/download.svg"
+                  alt=""
+                />
+                <img
+                  src="imgs/invalid.svg"
+                  alt=""
+                  id="inv-mail-signin"
+                  class="invalid-icon"
+                  alt=""
+                />
+                <div id="email-exist-signin">
+                  <span id="email-exist-hint-signin"
+                    >This email address isn't registered</span
+                  >
+                </div>
+              </div>
+              <div class="input position-relative col-12">
+                <label for="pass">Password</label>
+                <input
+                  type="password"
+                  name=""
+                  id="pass-signin"
+                  placeholder="Enter your password"
+                  class="col-7"
+                />
+                <button id="eye-signin"><i class="fa-solid fa-eye"></i></button>
+
+                <button id="eye-slash-signin">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </button>
+                <img
+                  id="v-img-signin"
+                  class="valid-icon-pass"
+                  src="imgs/download.svg"
+                  alt=""
+                />
+                <img
+                  id="inv-img-signin"
+                  class="invalid-icon-pass"
+                  src="imgs/invalid.svg"
+                  alt=""
+                />
+                <div id="spanRow" class="mt-1 d-flex justify-content-end">
+                  <span id="wrong" class="d-none WrongPass"
+                    >Wrong Password</span
+                  >
+                  <span class="forget"><a href="">Forget Password?</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="signup-btn col-12 d-flex justify-content-center">
+              <button id="signin" class="w-50">Sign In</button>
+            </div>
+          </div>
+
+          <div class="social d-flex flex-column gap-2 align-items-center">
+            <span>or do it via other accounts</span>
+            <div class="icons gap-2 d-flex">
+              <a href=""><i class="fa-brands fa-google"></i></a>
+              <a href=""><i class="fa-brands fa-apple"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <div class="haveacc">
+            <h6>Don't hane an account? <a href="signup.html">Sign Up</a></h6>
+          </div>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signin.js"></script>
+  </body>
+</html>
